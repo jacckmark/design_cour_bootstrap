@@ -1,0 +1,18 @@
+//all bootstrap variables that we can overwrite are placed inside _variables.scss
+//file in node-modules/boostrap/scss
+
+//main background color (not working for a jumbotron)
+$body-bg: #ededed;
+
+$theme-colors: (
+    //overwrites primary bootstrap color (the blue one)
+    "primary": #d95700
+);
+
+.jumbotron {
+    background-color: cornflowerblue !important;
+    border-top: 3px solid #ffffff;
+}
+
+//we have to do import to include all boostrap styles and make them available for scss file
+@import "node_modules/bootstrap/scss/bootstrap";
